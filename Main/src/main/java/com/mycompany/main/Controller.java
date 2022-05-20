@@ -8,7 +8,7 @@ package com.mycompany.main;
  *
  * @author USER
  */
-import javax.swing.*;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -16,8 +16,8 @@ import java.awt.event.ActionListener;
 
 public class Controller implements ActionListener {
     Calculator frame;
-    public double a =0;
-    public int key = 0;
+    private double a =0;
+    private int key = 0;
 
 
 
@@ -27,12 +27,6 @@ public class Controller implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        //frame.textArea.setText(e.getActionCommand());
-
-
-        if(!"".equals(frame.textArea.getText())){
-            a = Double.parseDouble(frame.textArea.getText());
-        }
 
        if (e.getSource() == frame.butt[0]){
            frame.textArea.setText(frame.textArea.getText() +"7");

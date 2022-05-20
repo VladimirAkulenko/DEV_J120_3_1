@@ -37,11 +37,12 @@ public class Calculator extends JFrame {
         add(centerPanel, BorderLayout.CENTER);
         buttons();
         Controller calc = new Controller(this);
-        butt[16].addActionListener(calc);
+        butt[3].addActionListener(calc);
         butt[7].addActionListener(calc);
         butt[11].addActionListener(calc);
         butt[15].addActionListener(calc);
-        butt[3].addActionListener(calc);
+        butt[16].addActionListener(calc);
+                
     }
 
     private void buttons (){
